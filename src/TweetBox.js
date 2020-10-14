@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./TweetBox.css";
 import { Avatar, Button } from "@material-ui/core";
 import db from "./firebase";
+import firebase from "firebase"
 
 function TweetBox() {
   const [tweetMessage, setTweetMessage] = useState("");
@@ -14,6 +15,7 @@ function TweetBox() {
       displayName: "Darnus",
       username: "_christian_L",
       verified: true,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       text: tweetMessage,
       image: tweetImage,
       avatar:
