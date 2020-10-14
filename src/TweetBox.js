@@ -51,7 +51,7 @@ function TweetBox() {
           type="submit"
           className="tweetBox__tweetButton"
         >
-          Tweet
+          Dweet
         </Button>
       </form>
     </div>
