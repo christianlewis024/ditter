@@ -12,3 +12,20 @@
   border: 1px solid var(--twitter-background);
   padding: 15px 20px;
 }
+/* hide scroll bars on all browsers */
+/*  */
+/* chrome, safari, and opera */
+.feed::-webkit-scrollbar {
+  display: none;
+}
+.feed {
+  -ms-overflow-style: none; /* ie and edge*/
+  scrollbar-width: none; /* firefox */
+}
+
+/* end scroll bar hiding */
+
+.feed__header > h2 {
+  font-size: 20px;
+  font-weight: 800;
+}

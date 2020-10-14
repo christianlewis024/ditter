@@ -1,10 +1,10 @@
 import React from 'react'
-import "./Widget.css"
+import "./Widgets.css"
 
 function Widgets() {
     return (
-        <div>
-            
+        <div className="widgets">
+            <h2>widgets</h2>
         </div>
     )
 }
